@@ -83,7 +83,8 @@ class Ui_dialog_new(object):
         dialog_new.setWindowTitle(QCoreApplication.translate("dialog_new", u"Dialog", None))
         self.text_name.setText("")
         self.text_name.setPlaceholderText(QCoreApplication.translate("dialog_new", u"Name", None))
-        self.box_version.setPlaceholderText(QCoreApplication.translate("dialog_new", u"Version", None))
+        # self.box_version.setPlaceholderText(QCoreApplication.translate("dialog_new", u"Version", None))
+        # NOT IMPLEMENTED IN PYSIDE2 VERSION 5.13.2 
         self.check_fabric.setText(QCoreApplication.translate("dialog_new", u"Use Fabric", None))
         self.text_java.setPlaceholderText(QCoreApplication.translate("dialog_new", u"Java Path", None))
         self.text_jvm.setPlaceholderText(QCoreApplication.translate("dialog_new", u"JVM Arguments", None))
