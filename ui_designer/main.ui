@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Impaler Launcher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="layout_instance">
+      <item>
+       <widget class="QListView" name="list_instances"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="layout_buttons">
+        <item>
+         <widget class="QPushButton" name="button_launch">
+          <property name="text">
+           <string>Launch</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_configure">
+          <property name="text">
+           <string>Configure</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_remove">
+          <property name="text">
+           <string>Remove</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1">
+     <widget class="QTextBrowser" name="text_browser_log"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_instance">
+    <property name="title">
+     <string>Instance</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_import"/>
+   </widget>
+   <widget class="QMenu" name="menu_account">
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="action_login"/>
+    <addaction name="action_logout"/>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="action_info"/>
+   </widget>
+   <addaction name="menu_instance"/>
+   <addaction name="menu_account"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_info">
+   <property name="text">
+    <string>Info</string>
+   </property>
+  </action>
+  <action name="action_new">
+   <property name="text">
+    <string>New Instance</string>
+   </property>
+  </action>
+  <action name="action_import">
+   <property name="text">
+    <string>Import Instance</string>
+   </property>
+  </action>
+  <action name="action_login">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="action_logout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
